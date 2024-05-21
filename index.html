@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fide's page</title>
+  <!-- Import font Poppins dari Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Import file CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header dengan judul -->
+  <header class="header">
+    <h1 class="title"><span class="typed-text"></span><span class="cursor">|</span></h1>
+  </header>
+
+  <!-- Navigasi dengan sticky -->
+  <nav>
+    <div class="nav-container">
+      <div class="brand logo">
+        <a href="#top" class="nav__link"><span class="logo">fide | 220211060317</span></a>
+      </div>
+      <div class="nav-toggle">
+        <div class="container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+      <ul class="nav__items">
+        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
+        <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
+        <li class="nav__item"><a href="#footer" class="nav__link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Bagian Home -->
+    <section id="home" class="animate home">
+      <div class="home-container">
+        <div class="content">
+          <h1 class="title">Halo! saya <br><span>Teofide Pangemanan</span></h1>
+          <p class="description">
+            Saya berusia 18 tahun, asli dari Manado. Saat ini saya sedang menempuh pendidikan di jurusan Teknik Informatika. Saya memiliki minat yang besar dalam dunia teknologi, dan saya selalu bersemangat untuk terus belajar dan mengembangkan keterampilan saya di bidang ini.
+          </p>
+        </div>
+        <div class="image">
+          <img src="asset/img/profil.jpg" alt="foto profil">
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian Gallery -->
+    <section id="gallery" class="animate gallery">
+      <div class="gallery-container">
+        <h2>Gallery.</h2>
+        <div class="image-grid">
+          <img src="asset/img/1.jpg" alt="Gambar 1">
+          <img src="asset/img/2.jpg" alt="Gambar 2">
+          <img src="asset/img/3.jpg" alt="Gambar 3">
+          <img src="asset/img/4.jpg" alt="Gambar 4">
+          <img src="asset/img/5.jpg" alt="Gambar 5">
+          <img src="asset/img/6.jpg" alt="Gambar 6">
+          <img src="asset/img/7.jpg" alt="Gambar 7">
+          <img src="asset/img/8.jpg" alt="Gambar 8">
+          <img src="asset/img/9.jpg" alt="Gambar 9">
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian Blog -->
+    <section id="blog" class="animate blog">
+      <div class="blog-container">
+        <h2>Blog.</h2>
+        <div id="article-list" class="article-list"></div>
+        <div class="pagination">
+          <button class="prev" disabled>Prev</button>
+          <span class="page-info">Page 1 of 1</span>
+          <button class="next">Next</button>
+        </div>
+      </div>
+    </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="contact-container">
+      <h2>Contact.</h2>
+      <ul>
+        <li><a href="https://www.instagram.com/fidepng?igsh=YjM0aGV2ZXhkYWx0" target="_blank" rel="noopener noreferrer"><img src="asset/img/instagram.png" alt="Instagram" class="contact-icon"> Instagram</a></li>
+        <li><a href="mailto:teofidepangemanan026@student.unsrat.ac.id"><img src="asset/img/gmail.png" alt="Gmail" class="contact-icon"> Gmail</a></li>
+        <li><a href="https://github.com/fidepng" target="_blank" rel="noopener noreferrer"><img src="asset/img/github-white.png" alt="GitHub" class="contact-icon"> GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Lightbox untuk galeri gambar -->
+  <div class="lightbox"></div>
+
+</body>
+  <!-- Import file JavaScript -->
+  <script src="script.js"></script>
+  <script src="blog.js"></script>
+</html>
